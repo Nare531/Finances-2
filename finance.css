@@ -1,0 +1,486 @@
+*,
+*::bfore,
+*::after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul,ol,li{
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body{
+  
+  height: 100%;
+  background:#fafafa;
+  line-height: 1;
+  font-size: 14px;
+  color: #252B42;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+
+/*------------------------------------------------------------------------*/
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+._container{
+  max-width: 1046px;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0px 15px;
+ 
+
+  
+}
+._ibg{
+  position: relative;
+}
+
+._ibg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+/*----------Header-------------------------------------------------------------*/
+.header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+
+}
+
+.header__container
+{
+  display: flex;
+  min-height: 104px;
+  align-items: center;
+
+}
+
+@media(min-width:479px){
+  .header__container{
+    min-height: 70px;
+  }
+}
+
+
+._container{
+
+}
+
+.header__logo{
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+
+}
+
+.header__menu{
+  margin: 0 0 0 113px;
+ 
+
+}
+
+.menu{
+  padding:5px 0 ;
+
+}
+
+.menu__list{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.menu-item{
+
+}
+.menu__item:not(:last-child){
+  margin: 0px 21px 0px 0px;
+}
+
+.menu__link{
+color: #737373;
+line-height:calc(24 / 14 * 100%);
+font-weight: 600;
+
+
+}
+
+@media (max-width: 992px){
+.header__menu{
+  margin:0px 0px 0px 80px ;
+}
+
+}
+
+@media (max-width: 767px){
+  .header__menu{
+    margin:0px 0px 0px 50px ;
+  }
+  
+  }
+
+  @media (max-width: 479px){
+    .header__menu{
+      margin:0px 0px 0px 20px ;
+    }
+    
+    }
+
+    @media (max-width: 479px){
+      .menu__link{
+        font-size: 18px;
+      }
+    }
+
+    /*...Ya padval.........................................*/
+
+
+
+
+
+
+
+
+    /*...page................................................*/
+
+    .page{
+      flex: 1 1 auto;
+      
+    }
+    
+    .page__main-block{ 
+     
+      
+    }
+
+  
+    .page__services{
+      position: relative;
+      margin: -111px  0px 0px 0px;
+      z-index: 2;
+    
+
+    }
+    .page__advantages{
+
+    }
+    .footer{
+
+    }
+
+
+    /*...Header-block................................................*/
+
+    .header-block{
+      text-align: center;
+      letter-spacing: 0.2px;
+      
+    }
+    
+    .header-block__title{
+      line-height: 142%;
+      font-size: 40px;
+      font-weight: 700;
+      
+    
+    }
+    
+    .header-block__title :not(:last-child){
+      margin: 0px 0px 10px 0px;
+    }
+    
+    .header-block__sub-title{
+      line-height: 142%;
+      color: #737373;
+    } 
+
+
+
+    /*...Main.......................................................*/
+  
+ .main-block{
+  position: relative;
+ }
+.main-block-contaiiner{
+  
+
+}
+ ._container{
+
+}
+
+.main-block__body{
+  padding: 184px 0px 191px 0px;
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+
+}
+
+@media(max-width:992px){
+  .main-block__body{
+    padding:120px 0px 191px 0px ;
+  }
+}
+
+.main-block__body >*:not(:last-child){
+  margin: 0px 0px 35px 0px;
+
+}
+.main-block__title{
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 137%;
+  
+  letter-spacing: 0.2px;
+
+}
+@media(max-width:479px){
+.main-block__title{
+  font-size: 42px;
+}
+}
+
+
+.main-block__text{
+  color: #121212;
+  font-size: 20px;
+  line-height: 150%;
+
+}
+
+@media(min-width:479px){
+  .main-block__text{
+    color: grey;
+  }
+}
+
+.main-block__buttons{
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -10px 0px;
+}
+
+.main-block__button{
+
+border-radius: 37px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5px 36px;
+min-height: 48px;
+letter-spacing: 0.2px;
+margin: 10px 0;
+font-weight: 700;
+line-height: 150%;
+text-align: center;
+
+}
+@media(max-width:479px){
+  .main-block__button{
+    flex: 1 1 100%;
+  }
+}
+@media(min-width:479px){
+.main-block__button:not(:last-child){
+  margin-right: 10px;
+}
+}
+
+.main-block__button_orange{
+  background: #FF7B47;
+  color: white;
+
+}
+.main-block__button_border{
+  color: #0D5C63;
+  border: 1px solid #0D5C63;
+
+}
+.main-block__image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}
+@media (max-width:1300px)  {
+  .main-block__image img{
+    object-position: right;
+  }
+}
+
+@media (max-width:979px){
+  .main-block__image img{
+    opacity: 0.5;
+  }
+}
+/*.......Services.....................................................................*/
+
+
+.services{
+
+}
+
+.services__container{
+
+
+}
+
+.services__body{
+  display: flex;
+  
+}
+
+
+
+.services__column{
+  padding: 0px 15px;
+  flex: 0 1 33.333%;
+
+}
+
+
+
+.services__item{
+  height: 100%;
+  box-shadow: 0px 13px 19px rgba(0,0,0,0.07);
+  background-color: #fff;
+   padding: 35px;
+   
+}
+.item-service{
+
+}
+
+.item-service__green{
+  background-color: #0d5c63;
+ 
+
+}
+
+@media (max-width:920px){
+  .item-service__green{
+   
+  }
+}
+
+.item-service__green .item-service__title{
+  color: #fff;
+}
+
+.item-service__green .item-service__text{
+  color: #fff;
+}
+
+.item-service >*:not(:last-child){
+  margin: 0px 0px 10px 0px;
+}
+.item-service__icon{
+
+}
+.item-service__title{
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+
+}
+.item-service__text{
+  color: #737373;
+  line-height: 142%;
+
+}
+
+/*...Advantages.............................................*/
+
+
+.advantages{
+  padding: 80px 0px;
+
+}
+
+.advanteges__container{
+
+}
+._container{
+
+}
+
+.advanteges__header{
+  margin: 0px 0px 50px 0px;
+
+}
+
+
+
+.advanteges__body{
+  display: flex;
+  margin: 0px -15px ;
+  
+ 
+
+}
+.advanteges__column{
+  padding:0px 15px;
+  flex: 0 1 25%;
+
+}
+.advantages__item{
+  color: #fff;
+  padding: 30px 40px;
+  text-align: center;
+  font-weight: 700;
+
+}
+
+.advantages__item > *:not(:last-child){
+  margin:0px 0px 10px 0px
+}
+.advanteges__icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+
+}
+
+.advanteges__value{
+font-size: 24px;
+line-height: 142%;
+color: #3c3c3c;
+
+
+}
+.advanteges__text{
+  font-size: 16px;
+  color: #737373;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
